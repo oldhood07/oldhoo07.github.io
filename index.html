@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Datos alumno Repo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <header>
+      <h1>Datos de Alumno
+      </h1>
+    </header>
+    <form id="forma" action="javascript:pantalla()">
+      <p><em>El borde Naranja indica obligatorio</em></p>
+
+      <p>
+        <label accesskey="C">
+            Boleta: <br>
+            <input name="boleta" type="text" class="numero"
+                   placeholder="Boleta"
+                   maxlength="11" size="13">
+        </label>
+    </p>
+
+    <p>
+        <label accesskey="N">
+            Nombre:<br>
+            <input name="nombre" type="text"
+                   placeholder="Nombre"
+                   maxlength="11" size="13">
+        </label>
+    </p>
+
+    <p>
+    <label accesskey="T">
+        Grupo:<br>
+        <input name="grupo" type="text"
+               placeholder="#####"
+               maxlength="11" size="13">
+    </label>
+</p>
+<p>
+    <label accesskey="T">
+        Materia:<br>
+        <input name="materia" type="text"
+               placeholder="Materia registrada"
+               maxlength="20" size="15">
+    </label>
+</p>
+
+    <p>
+        <label accesskey="F">
+          Fecha<br>
+          <input name="fecha" type="date" autofocus required
+                 max="2022-01-24" min="2021-01-24">
+        </label>
+        <br><em>año-mes-día (ej. 2021-03-30)</em>
+      </p>
+      
+      <br><output id="salidaBoleta"></output>
+      <br><output id="salidaNombre"></output>
+      <br><output id="salidaGrupo"></output>
+      <br><output id="salidaMateria"></output>
+      <br><output id="salidaFecha"></output>
+      <p><input type="submit" value="Pantalla" accesskey="P">
+      <input type="submit" value="Alerta" accesskey="P" onclick="alerta();"></p>
+    </form>
+    <footer>
+      Copyright 2021 Andrade Valadez Jose Miguel
+    </footer>
+    <script src="js/CtrlDatos.js"></script>
+  </body>
+</html>

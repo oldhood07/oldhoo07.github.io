@@ -1,0 +1,9 @@
+html {font-family: "Nunito"; text-align: center}
+body {display: inline-block; text-align: left; background: #1e1e20; color: aliceblue;}
+label, legend {font-weight: bold}
+*:required, .obligatorio {border: thin solid orange}
+input[type=number], .numero {text-align: right}
+br + output, footer, form em {font-size: small}
+h1{
+    color: #9b4bc1;
+}
